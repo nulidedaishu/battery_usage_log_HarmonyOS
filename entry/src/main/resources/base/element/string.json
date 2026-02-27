@@ -1,0 +1,32 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "label"
+    },
+    {
+      "name": "reason_keep_background_running",
+      "value": "应用需要在后台持续监测电池信息"
+    },
+    {
+      "name": "reason_keep_screen_on",
+      "value": "应用需要在前台运行时保持屏幕常亮，以持续监控和显示电池日志。"
+    },
+    {
+      "name": "reason_write_media",
+      "value": "应用需要此权限以将日志文件导出到公共目录。"
+    },
+    {
+      "name": "reason_read_media",
+      "value": "应用需要在后台持续监测电池信息"
+    }
+  ]
+}

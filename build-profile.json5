@@ -1,0 +1,69 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "storeFile": "D:/yangyue/study/HarmonyOS/KeyStoreFile.p12",
+          "storePassword": "0000001B8F28728ECFE1C06F0A09AD6CB47024C0BB5D31CD6B88EC98C87D0B981D88FC5CA0D16D03F1D0FE",
+          "keyAlias": "KeyStoreFile",
+          "keyPassword": "0000001B4A66419CAF6E79EBE0868F5DC476F26DCA4F4E242D949AA930818BC85684271FF79DD35833D67B",
+          "signAlg": "SHA256withECDSA",
+          "profile": "D:/yangyue/study/HarmonyOS/电池功耗记录Release.p7b",
+          "certpath": "D:/yangyue/study/HarmonyOS/电池功耗记录.cer"
+        }
+      },
+      {
+        "name": "release",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "D:/yangyue/study/HarmonyOS/电池功耗记录.cer",
+          "keyAlias": "KeyStoreFile",
+          "keyPassword": "0000001B8B7C560B89634CE528F16374724C2F234216231470522A282AA4294D20B60DAD819EE9935C630B",
+          "profile": "D:/yangyue/study/HarmonyOS/电池功耗记录Release.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "D:/yangyue/study/HarmonyOS/KeyStoreFile.p12",
+          "storePassword": "0000001B19AE07E435E6225FCB78717D1F637A279219A91235E7C95A2760BA2F4DCEF0E083C1EDBDC05158"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "targetSdkVersion": "5.1.1(19)",
+        "compatibleSdkVersion": "5.0.1(13)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
